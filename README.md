@@ -61,6 +61,14 @@ sqlite>
 
 5)Correct Virginie Mitchell's address to "New York, NY, 10108".
 
+select users.id from users where first_name='Virginie';
+//39
+select * from addresses where user_id like '39';
+//id matches 41, and
+update addresses set zip='10108', city='New York', state='NY' where id=41;
+
+
+
 
 
 6)How much would it cost to buy one of each tool?
